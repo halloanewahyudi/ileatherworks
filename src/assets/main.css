@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    /* Base font size */
+:root {
+    --base-font-size: 16px;
+    --major-second-ratio: 1.125;
+  }
+
+  body {
+    font-size: var(--base-font-size);
+  }
+  
+  /* Applying the Major Second scale */
+  h1 {
+    font-size: 28.85px; /* 16px * 1.125^5 ≈ 28.85px */
+  }
+  
+  h2 {
+    font-size: 25.65px; /* 16px * 1.125^4 ≈ 25.65px */
+  }
+  
+  h3 {
+    font-size: 22.8px; /* 16px * 1.125^3 ≈ 22.8px */
+  }
+  
+  h4 {
+    font-size: 20.26px; /* 16px * 1.125^2 ≈ 20.26px */
+  }
+  
+  h5 {
+    font-size: 18px; /* 16px * 1.125^1 ≈ 18px */
+  }
+  
+  h6 {
+    font-size: 16px; /* 16px * 1.125^0 = 16px */
+  }
+  
+  p {
+    font-size: 14.22px; /* 16px * 1.125^-1 ≈ 14.22px */
+  }
+  
+  small {
+    font-size: 12.64px; /* 16px * 1.125^-2 ≈ 12.64px */
+  }
+  
+  .btn{
+    @apply py-2 px-5 rounded-lg bg-brand-700 text-brand-100 hover:bg-brand-800 duration-300;
+  }
+}
